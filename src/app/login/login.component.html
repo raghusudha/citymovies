@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        <h2><ion-icon name="log-in"></ion-icon> Login</h2>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+    <ion-row justify-content-center>
+     <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div padding>
+        <ion-card>
+          <ion-item>
+            <ion-input type="text" placeholder="Username" [(ngModel)]="username"></ion-input>
+          </ion-item>
+        </ion-card>
+        
+        <ion-card> 
+        <ion-item>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+        </ion-card>
+        <div padding>
+        <a routerLink="/home">Forgot Password?</a>
+        </div>
+    </div>
+        <div padding>
+            <ion-button color="success" (click)="onLogin()">LOGIN</ion-button>
+            <ion-button color="secondary" (click)="onRegister()">SIGNUP</ion-button>
+           
+            <ion-button color="dark"><a href='https://www.facebook.com/'><ion-icon name="contact"></ion-icon>GUEST USER</a></ion-button>
+        </div>
+        
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+

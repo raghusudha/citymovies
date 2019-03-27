@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+          <h2><ion-icon name="wallet"></ion-icon>Payment Details</h2>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-grid>
+          
+              <div padding>
+              <ion-card>
+                <ion-item>
+                  <ion-input type="text" placeholder="Enter Number of Tickets"></ion-input>
+                </ion-item>
+              </ion-card>
+
+              <div padding>
+                <h3>Payment</h3>
+                <ion-card>
+                    <ion-item>
+                      <ion-input type="text" placeholder="Enter Debit Card"></ion-input>
+                    </ion-item>
+                  </ion-card>
+                  <ion-card>
+                      <ion-item>
+                        <ion-input type="text" placeholder="Enter month/Year"></ion-input>
+                      </ion-item>
+                    </ion-card>
+              </div>
+              <div padding>
+                  <ion-button color="success" (click)="onPay()">PAY</ion-button>
+                  </div>
+              </div>
+              
+              </ion-grid>
+              </ion-content>
+              
+              
+              

@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+          <h2>List of Movies</h2>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+ 
+  <ion-content>
+  <ion-card  *ngFor="let movie of list">
+   <ion-card-header>
+     <ion-card-title><ion-icon name="film"></ion-icon>{{ movie.name }}
+      </ion-card-title> <br>
+        <ion-icon name="calendar"></ion-icon> {{ movie.year }} <br>
+     <img src="{{ movie.image_url }}"/><br> 
+          <ion-icon name="film"></ion-icon>{{ movie.production_house }}<br> 
+          <ion-icon name="star-half"></ion-icon>{{ movie.rating }}<br> 
+          <ion-icon name="pin"></ion-icon>{{ movie.type }}<br> 
+          <ion-icon name="pulse"></ion-icon>{{ movie.language}}<br> 
+          <ion-icon name="calendar"></ion-icon>{{ movie.date }}<br>
+          
+          
+          
+        <ion-card></ion-card>
+
+          <div padding>
+            <ion-button color="warning" (click)="onBooking()">BOOKING</ion-button>
+            <ion-button color="success" (click)="onOffers()">OFFERS</ion-button>
+            </div>
+            
+            
+        </ion-card-header>
+    </ion-card>
+  </ion-content>
+  

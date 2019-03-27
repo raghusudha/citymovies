@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+        <h2> New User</h2>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid>
+    <ion-row justify-content-center>
+     <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div padding>
+            <ion-card> 
+                <ion-item>
+                  <ion-input type="name" placeholder="Enter Id" [(ngModel)]="customer.id"></ion-input>
+                </ion-item>
+                </ion-card>
+            <ion-card> 
+                <ion-item>
+                  <ion-input type="name" placeholder="Enter Name" [(ngModel)]="customer.name"></ion-input>
+                </ion-item>
+                </ion-card>
+        
+          <ion-card>
+          <ion-item>
+            <ion-input type="password" placeholder=" Enter Password" [(ngModel)]="customer.password"></ion-input>
+          </ion-item>
+        </ion-card>
+        
+        <ion-card> 
+        <ion-item>
+          <ion-input type="address" placeholder="Enter Address" [(ngModel)]="customer.address"></ion-input>
+        </ion-item>
+        </ion-card>
+
+        <ion-card> 
+          <ion-item>
+            <ion-input type="email" placeholder="Enter Email" [(ngModel)]="customer.email"></ion-input>
+          </ion-item>
+          </ion-card>
+          <ion-card> 
+              <ion-item>
+                <ion-input type="phone" placeholder="Enter Mobile Number" [(ngModel)]="customer.phone"></ion-input>
+              </ion-item>
+              </ion-card>
+      </div>
+  <ion-button color="tertiary" (click)="onRegister(customer)">REGISTER</ion-button>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>
